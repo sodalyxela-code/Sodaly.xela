@@ -502,6 +502,24 @@
             font-size: 1.2rem;
             border: 1px dashed var(--blanco);
         }
+        /* ================= ESTILO PARA LA TARJETA DEL CLUB ================= */
+        .club-tarjeta-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .club-tarjeta-container img {
+            width: 100%;
+            max-width: 800px; /* Tamaño máximo de la tarjeta en pantalla */
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3); /* Sombra para darle relieve */
+            transition: transform 0.3s ease; /* Efecto de zoom */
+        }
+
+        .club-tarjeta-container img:hover {
+            transform: scale(1.02); /* Se hace un poquito más grande al pasar el mouse */
+        }
 
         /* ================= FOOTER ================= */
         footer {
@@ -804,12 +822,26 @@
             <h2>Únete al SODALY Club</h2>
             <p>Acumula sellos con cada compra y obtén beneficios exclusivos. ¡Queremos consentirte por ser parte de nuestra comunidad!</p>
             <div class="club-cards">
+                <div class="club-card">1 Vasito = 1 Sello</div>
+                <div class="club-card">5 Sellos = 1 Vasito Gratis</div>
+                <div class="club-card">Beneficios en fechas especiales</div>
+            </div>
+            <br><br>
+            <p>Pregunta por tu tarjeta de sellos en nuestro punto de venta.</p>
+    <!-- ================= SODALY CLUB ================= -->
+    <section id="club" class="section-padding club-section">
+        <div class="container">
+            <h2>Únete al SODALY Club</h2>
+            <p>Acumula sellos con cada compra y obtén beneficios exclusivos. ¡Queremos consentirte por ser parte de nuestra comunidad!</p>
+            <div class="club-cards">
                 <div class="club-card">1 Sello = 1 Vasito</div>
                 <div class="club-card">5 Sellos = 1 Vasito Gratis</div>
                 <div class="club-card">Beneficios en fechas especiales</div>
             </div>
             <br><br>
             <p>Pregunta por tu tarjeta de sellos en nuestro punto de venta.</p>
+        </div>
+    </section>
         </div>
     </section>
 
