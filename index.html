@@ -357,6 +357,50 @@
             font-size: 1.4rem;
             margin-bottom: 10px;
         }
+        /* ================= NUEVOS ESTILOS PARA PRECIOS ================= */
+        .precios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .precio-card {
+            background: rgba(255, 255, 255, 0.15); /* Fondo semitransparente */
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid var(--amarillo); /* Borde amarillo de la marca */
+            transition: transform 0.3s ease;
+        }
+
+        .precio-card:hover {
+            transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .precio-card img {
+            width: 100%;
+            max-width: 180px; /* Tamaño de la imagen del vaso */
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .precio-card h4 {
+            color: var(--blanco);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .precio-card .precio {
+            font-family: var(--fuente-titulos);
+            font-size: 1.8rem;
+            color: var(--amarillo);
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
 
         /* ================= MASCOTA NAMA ================= */
         .nama-section {
@@ -677,6 +721,32 @@
                     <p>Chamoy, limón y Tajín. La combinación perfecta de dulce, ácido y picante que define a SODALY.</p>
                 </div>
             </div>
+            <!-- NUEVA SECCIÓN DE PRECIOS Y TAMAÑOS -->
+            <h3 class="text-center" style="margin-top: 60px; color: var(--amarillo); font-size: 2rem;">Elige tu tamaño favorito</h3>
+            
+            <div class="precios-grid">
+                <!-- Vaso Pequeño -->
+                <div class="precio-card">
+                    <img src="img/vaso-p.png" alt="Vaso Pequeño SODALY">
+                    <h4>Vaso Pequeño</h4>
+                    <p class="precio">Q10.00</p>
+                </div>
+
+                <!-- Vaso Mediano -->
+                <div class="precio-card">
+                    <img src="img/vaso-m.png" alt="Vaso Mediano SODALY">
+                    <h4>Vaso Mediano</h4>
+                    <p class="precio">Q15.00</p>
+                </div>
+
+                <!-- Vaso SODALY (Grande) -->
+                <div class="precio-card">
+                    <img src="img/vaso-g.png" alt="Vaso SODALY Grande">
+                    <h4>Vaso SODALY</h4>
+                    <p class="precio">Q20.00</p>
+                </div>
+            </div>
+            <!-- FIN DE LA NUEVA SECCIÓN -->
         </div>
     </section>
 
